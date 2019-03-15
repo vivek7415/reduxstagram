@@ -1,0 +1,181 @@
+*{
+    /* border: 1px solid magenta; */
+    box-sizing: border-box;
+}
+.SingleView{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+.SingleElement {
+    width: calc(50% - 20px);
+    /* height:70vh; */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    border: 1px solid white;
+    box-shadow: 0 2px 3px #ccc;
+    /* padding: 10px; */
+}
+
+.Image {
+    flex:1;
+    padding:0.5vh;
+    height: 50vh;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.Caption{
+    
+    /* height: 25%; */
+    margin: 0px;
+    padding:10px;
+    color: Black;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Cochin;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.User {
+    /* flex:1; */
+    padding: 10px;
+    /* border: 1px solid magenta; */
+    width: 100%;
+    margin: 10px;
+    height:15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;    
+    align-items: center;
+}
+
+.UserInterest{
+    flex: 1;
+    height: 100%;
+    width: calc(50% - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    box-shadow: 0px 2px 3px #eee;
+}
+.UserInterest:hover {
+    transform: translateY(-1px) translateX(-1px);
+    box-shadow: 0px 2px 3px rgb(173, 173, 173);
+}
+
+.Image2 {
+    margin: 1%;
+    width: 15%;
+    height: 40%;
+
+}
+
+.Likes {
+    width: 40%;
+    /* height: 40%; */
+    /* text-align: center; */
+    /* padding-top:7px; */
+    font-size: 3vmin;
+    font-weight: bold;
+    color: rgb(6, 77, 77);
+}
+
+.Comment {
+    width: calc(50% - 20px);
+    flex: 1;
+    height:calc(80vh - 20px);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 1px solid white; */
+    box-shadow: 0 2px 3px #ccc;
+    overflow-y: auto; 
+}
+.SingleComment{
+    color: Black;
+    font-family: Cochin;
+    font-style: italic;
+    text-transform: capitalize;
+    box-shadow: 0px 1px #ccc;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid blue; */
+
+}
+.SingleComment:hover{
+    cursor: pointer;
+}
+
+.SingleComment:hover .RemoveComment{
+    display: inline-block;
+    border: none;
+    background-color: white;
+    color: rgb(7, 76, 104);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.CommentText {
+    flex:1;
+   /* border: 1px solid green; */
+}
+
+.Comment strong{
+    color: rgb(2, 48, 66);
+    font-weight: bold;
+    font-style: normal;
+    text-transform: capitalize;
+}
+.RemoveComment{
+    display: none;
+}
+
+@media(max-width:720px){
+    .SingleView{
+        margin-top: 1vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .SingleElement{
+        width: calc(100vw - 5px);
+        height: calc(48vh - 20px);
+        margin:0px;
+        box-shadow: none;
+    }
+    .Image{
+        height:35vh;
+    }
+    .Comment{
+        /* width: calc(100% - 20px); */
+        width: calc(100vw - 20px);
+        height: calc(47vh - 10px);
+        /* border: 1px solid black; */
+
+    }
+    .UserInterest{
+        flex:1;
+        height: 5vh;
+        margin:10px;
+    }
+    .Caption{
+        height: 5vh;
+        font-size: 3vw;
+        z-index: 100;
+    }
+}

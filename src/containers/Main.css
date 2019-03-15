@@ -1,0 +1,10 @@
+*{
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+}
+.Main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    
+}
